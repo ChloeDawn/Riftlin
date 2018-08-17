@@ -1,0 +1,8 @@
+{
+  "id": "riftlin",
+  "name": "Riftlin @riftlin.version@",
+  "authors": [ "InsomniaKitten" ],
+  "listeners": [
+    "net.insomniakitten.riftlin.Riftlin"
+  ]
+}

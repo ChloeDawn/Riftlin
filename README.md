@@ -5,16 +5,9 @@ Riftlin provides the runtime and libraries required for creating Rift mods in Ko
 To use this library in your environment, append the following to your Gradle build script:
 
 ```groovy
-buildscript {
-  repositories {
-    maven { url = 'https://plugins.gradle.org/m2' }
-  }
-  dependencies {
-    classpath 'org.jetbrains.kotlin:kotlin-gradle-plugin:1.2.61'
-  }
+plugins {
+    id 'org.jetbrains.kotlin.jvm' version '1.2.61'
 }
-
-apply plugin: 'kotlin'
 
 repositories {
   maven { url = 'https://jitpack.io' }

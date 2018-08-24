@@ -30,13 +30,6 @@ minecraft {
   replace '@VERSION@', project.version
 }
 
-shadowJar {
-  classifier = ""
-  configurations = [project.configurations.compile]
-}
-
-tasks.build.dependsOn shadowJar
-
 repositories {
   maven { url = 'https://www.dimdev.org/maven' }
 }
@@ -47,6 +40,13 @@ dependencies {
   compile 'org.jetbrains.kotlin:kotlin-reflect'
   compile 'org.jetbrains:annotations'
 }
+
+shadowJar {
+  classifier = ''
+  configurations = [project.configurations.compile]
+}
+
+tasks.build.dependsOn shadowJar
 
 processResources {
   from(sourceSets.main.resources.srcDirs) {

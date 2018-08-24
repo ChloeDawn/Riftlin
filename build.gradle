@@ -7,7 +7,7 @@ buildscript {
   dependencies {
     classpath 'org.dimdev:ForgeGradle:2.3-SNAPSHOT'
     classpath 'com.github.jengelman.gradle.plugins:shadow:2.0.4'
-    classpath 'org.jetbrains.kotlin:kotlin-gradle-plugin:1.2.60'
+    classpath 'org.jetbrains.kotlin:kotlin-gradle-plugin:1.2.61'
   }
 }
 
@@ -18,7 +18,7 @@ apply plugin: 'java'
 
 archivesBaseName = 'Riftlin'
 group = 'net.insomniakitten.riftlin'
-version = '0.1.0'
+version = '0.2.0'
 sourceCompatibility = 1.8
 
 minecraft {
@@ -45,6 +45,7 @@ dependencies {
   implementation 'org.dimdev:rift:1.0.4-51:dev'
   compile 'org.jetbrains.kotlin:kotlin-stdlib-jre8'
   compile 'org.jetbrains.kotlin:kotlin-reflect'
+  compile 'org.jetbrains:annotations'
 }
 
 processResources {

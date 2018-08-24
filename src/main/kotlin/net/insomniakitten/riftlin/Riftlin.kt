@@ -1,11 +1,13 @@
 package net.insomniakitten.riftlin
 
-import org.dimdev.riftloader.listener.Instantiator
-
-class Riftlin : Instantiator {
-    override fun <T : Any> newInstance(clazz: Class<T>) = clazz.kotlin.objectInstance
-
-    companion object {
-        const val ID = "riftlin"
-    }
+/**
+ * Main reference class for Riftlin
+ * @author InsomniaKitten
+ * @since 0.1.0
+ */
+object Riftlin {
+    const val ID = "riftlin"
+    const val NAME = "Riftlin"
+    const val VERSION = "@VERSION@"
+    const val AUTHOR = "InsomniaKitten"
 }

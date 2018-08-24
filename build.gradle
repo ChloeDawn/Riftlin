@@ -43,7 +43,7 @@ repositories {
 
 dependencies {
   implementation 'org.dimdev:rift:1.0.4-51:dev'
-  compile 'org.jetbrains.kotlin:kotlin-stdlib-jre8'
+  compile 'org.jetbrains.kotlin:kotlin-stdlib-jdk8'
   compile 'org.jetbrains.kotlin:kotlin-reflect'
   compile 'org.jetbrains:annotations'
 }

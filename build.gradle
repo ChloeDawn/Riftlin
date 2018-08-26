@@ -15,6 +15,7 @@ apply plugin: 'net.minecraftforge.gradle.tweaker-client'
 apply plugin: "com.github.johnrengelman.shadow"
 apply plugin: 'kotlin'
 apply plugin: 'java'
+apply plugin: 'kotlin-kapt'
 
 archivesBaseName = 'Riftlin'
 group = 'net.insomniakitten.riftlin'
@@ -23,7 +24,7 @@ sourceCompatibility = 1.8
 
 minecraft {
   version = '1.13'
-  mappings = 'snapshot_20180817'
+  mappings = 'snapshot_20180823'
   runDir = 'run'
   tweakClass = 'org.dimdev.riftloader.launch.RiftLoaderClientTweaker'
   replaceIn 'net/insomniakitten/riftlin/Riftlin.kt'
@@ -32,13 +33,16 @@ minecraft {
 
 repositories {
   maven { url = 'https://www.dimdev.org/maven' }
+  maven { url = 'https://jitpack.io' }
 }
 
 dependencies {
-  implementation 'org.dimdev:rift:1.0.4-51:dev'
   compile 'org.jetbrains.kotlin:kotlin-stdlib-jdk8'
   compile 'org.jetbrains.kotlin:kotlin-reflect'
   compile 'org.jetbrains:annotations:13.0'
+  implementation 'org.dimdev:rift:1.0.4-51:dev'
+  implementation 'com.github.InsomniaKitten:Pylon:0.2.2'
+  kapt 'com.github.InsomniaKitten:Pylon:0.2.2'
 }
 
 shadowJar {
@@ -47,13 +51,3 @@ shadowJar {
 }
 
 tasks.build.dependsOn shadowJar
-
-processResources {
-  from(sourceSets.main.resources.srcDirs) {
-    include 'riftmod.json', 'pack.mcmeta'
-    expand 'version': project.version
-  }
-  from(sourceSets.main.resources.srcDirs) {
-    exclude 'riftmod.json', 'pack.mcmeta'
-  }
-}

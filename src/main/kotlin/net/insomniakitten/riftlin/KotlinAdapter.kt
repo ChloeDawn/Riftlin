@@ -8,7 +8,7 @@ import kotlin.reflect.KClass
 
 /**
  * Kotlin adapter for Rift's [Instantiator] API
- * @see RiftLoader.newInstanceOfClass
+ * @see RiftLoader.newInstance
  * @author InsomniaKitten
  */
 @Listener(priority = Int.MIN_VALUE)

@@ -1,9 +1,0 @@
-{
-  "id": "riftlin",
-  "name": "Riftlin",
-  "version": "${version}",
-  "authors": [ "InsomniaKitten" ],
-  "listeners": [
-    "net.insomniakitten.riftlin.KotlinAdapter"
-  ]
-}

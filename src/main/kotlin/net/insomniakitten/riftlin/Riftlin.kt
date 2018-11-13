@@ -5,7 +5,6 @@ import net.insomniakitten.pylon.annotation.rift.Mod
 /**
  * Main reference class for Riftlin
  * @author InsomniaKitten
- * @since 0.1.0
  */
 @Mod(id = Riftlin.ID, name = Riftlin.NAME, version = Riftlin.VERSION, authors = [Riftlin.AUTHOR])
 object Riftlin {

@@ -6,7 +6,7 @@ To use this library in your environment, append the following to your Gradle bui
 
 ```groovy
 plugins {
-    id 'org.jetbrains.kotlin.jvm' version '1.2.61'
+    id 'org.jetbrains.kotlin.jvm' version '1.3.0'
 }
 
 repositories {
@@ -14,6 +14,6 @@ repositories {
 }
 
 dependencies {
-  implementation 'com.github.InsomniaKitten:Riftlin:0.2.0'
+  implementation 'com.github.InsomniaKitten:Riftlin:0.3.0'
 }
 ```

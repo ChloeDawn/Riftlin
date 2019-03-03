@@ -7,7 +7,7 @@ buildscript {
   dependencies {
     classpath 'org.dimdev:ForgeGradle:2.3-SNAPSHOT'
     classpath 'com.github.jengelman.gradle.plugins:shadow:2.0.4'
-    classpath 'org.jetbrains.kotlin:kotlin-gradle-plugin:1.3.0'
+    classpath 'org.jetbrains.kotlin:kotlin-gradle-plugin:1.3.21'
   }
 }
 
@@ -19,7 +19,7 @@ apply plugin: 'kotlin-kapt'
 
 archivesBaseName = 'Riftlin'
 group = 'net.insomniakitten.riftlin'
-version = '0.3.0'
+version = '0.4.0'
 sourceCompatibility = 1.8
 
 minecraft {
@@ -39,7 +39,7 @@ repositories {
 dependencies {
   compile 'org.jetbrains.kotlin:kotlin-stdlib-jdk8'
   compile 'org.jetbrains.kotlin:kotlin-reflect'
-  compile 'org.jetbrains:annotations:16.0.3'
+  compile 'org.jetbrains:annotations:17.0.0'
   implementation 'org.dimdev:rift:1.0.4-87:dev'
   implementation 'com.github.InsomniaKitten:Pylon:0.2.2'
   kapt 'com.github.InsomniaKitten:Pylon:0.2.2'
